@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Login Page</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-[#F2E9FC] to-[#A7D1E5] flex items-center justify-center p-4">
+  <div class="bg-white bg-opacity-90 backdrop-blur-lg rounded-3xl shadow-2xl flex flex-col md:flex-row overflow-hidden max-w-5xl w-full">
+    <!-- Illustration Section -->
+    <div class="md:w-1/2 bg-gradient-to-br from-indigo-400 to-blue-500 flex items-center justify-center p-8">
+      <img src="/image/delivery.png" alt="Login Illustration" class="max-w-85 h-auto hover:scale-105 transition duration-500"/>
+    </div>
+
+    <!-- Login Form -->
+    <div class="md:w-1/2 p-8">
+      <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-6">Sign in</h2>
+      <!-- Username Input -->
+      <div class="mb-4 relative">
+        <label class="block text-gray-700 font-semibold mb-1">Username</label>
+        <div class="flex items-center border rounded-xl px-4 py-2 bg-white hover:shadow-md transition">
+          <svg xmlns="http://www.w3.org/2000/svg" height="15" width="12.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#c0c1c4" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg>
+          <input type="text" placeholder=" Enter username" class="w-full outline-none bg-transparent"/>
+        </div>
+      </div>
+
+      <!-- Password Input -->
+      <div class="mb-4 relative">
+        <label class="block text-gray-700 font-semibold mb-1">Password</label>
+        <div class="flex items-center border rounded-xl px-4 py-2 bg-white hover:shadow-md transition">
+          <div class="w-4 h-6 text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-full h-full">
+              <!-- Lock Shackle -->
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 10V7a4 4 0 1 1 8 0v3" />
+              <!-- Lock Body -->
+              <rect x="4" y="10" width="16" height="10" rx="2" ry="2" />
+            </svg>
+          </div>
+          <input type="password" placeholder=" Enter password" class="w-full outline-none bg-transparent"/>
+          <svg class="w-5 h-5 text-gray-400 hover:text-indigo-500 cursor-pointer transition ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path d="M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Options -->
+      <div class="flex items-center justify-between mb-6 text-sm text-gray-600">
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="mr-2"/>
+          Remember me
+        </label>
+        <a href="#" class="hover:text-indigo-500 transition">Forgot Password?</a>
+      </div>
+
+      <!-- Login Button -->
+      <button class="w-full bg-indigo-500 text-white py-2 rounded-xl font-semibold hover:bg-indigo-600 transition duration-300">
+        Sign in
+      </button>
+    </div>
+  </div>
+</body>
+</html>

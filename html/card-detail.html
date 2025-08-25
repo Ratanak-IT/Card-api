@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <script defer src="product.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <a href="#">
+                    <img class="w-16 h-15" src="#" alt="logo" />
+                </a>
+            </div>
+            <nav
+                class="nav-links duration-450 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-blue-500" href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-blue-500" href="/product.html">Product</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-blue-500" href="#">Service</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-blue-500" href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex items-center gap-6">
+                <!-- Sign in -->
+                <a href="/login.html">
+                    <button class="bg-blue-300 text-white px-5 py-2 rounded-full hover:bg-sky-400">
+                        Sign in
+                    </button>
+                </a>
+                <!-- Sign up -->
+                <a href="/login.html">
+                    <button class="bg-blue-300 text-white px-5 py-2 rounded-full hover:bg-sky-400">
+                        Sign up
+                    </button>
+                </a>
+                <ion-icon onclick="onTogglemenu(this)" name="menu-outline"
+                    class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <div id="card-detail" class="max-w-4xl mx-auto p-6"></div>
+    <script src="../script/product-detail.js"></script>
+</body>
+
+</html>

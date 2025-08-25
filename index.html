@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Store</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body class="bg-[#E6EEF8] min-h-screen flex flex-col">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <a href="#">
+                    <img class="w-16 h-15" src="#" alt="logo" />
+                </a>
+            </div>
+            <nav
+                class="nav-links duration-450 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-blue-500" href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-blue-500" href="/html/product.html">Product</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-blue-500" href="#">Service</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-blue-500" href="./html/about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex items-center gap-6">
+                <!-- Sign in -->
+                <a href="./html/login.html">
+                    <button class="bg-blue-300 text-white px-5 py-2 rounded-full hover:bg-sky-400">
+                        Sign in
+                    </button>
+                </a>
+                <!-- Sign up -->
+                <a href="/login.html">
+                    <button class="bg-blue-300 text-white px-5 py-2 rounded-full hover:bg-sky-400">
+                        Sign up
+                    </button>
+                </a>
+                <ion-icon onclick="onTogglemenu(this)" name="menu-outline"
+                    class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <main class="flex-1">
+        <section
+            class="flex flex-col-reverse lg:flex-row items-center justify-center px-6 lg:px-12 py-12 space-y-8 lg:space-y-0 lg:space-x-8">
+            <!-- Text Content -->
+            <div class="text-center lg:text-left max-w-lg">
+                <h1 class="text-4xl md:text-5xl lg:text-[4.5rem] font-bold leading-tight">Computer Store</h1>
+                <p class="mt-4 text-black text-base md:text-lg">
+                    Welcome to Online Store! Discover quality products at unbeatable prices. Fast shipping. Secure
+                    checkout. Exceptional service.
+                </p>
+                <a href="/electronic.html">
+                    <button
+                        class="mt-6 px-6 py-3 bg-blue-600 text-white text-base md:text-lg rounded-full hover:bg-blue-800">
+                        Shop now
+                    </button>
+                </a>
+            </div>
+            <!-- Image -->
+            <img src="/image/logohome.png" alt="Laptop" class="max-w-xs md:max-w-sm lg:max-w-md w-full" />
+        </section>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="bg-white rounded-lg shadow-sm max-w-full dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
+                <a href="https://flowbite.com/" class="hover:underline">Electronics™</a>.
+                All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="/product.html" class="hover:underline me-4 md:me-6">Product</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Service</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">About</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelector(".nav-links");
+        function onTogglemenu(e) {
+            e.name = e.name === "close" ? "menu" : "close";
+            navLinks.classList.toggle("top-[8%]");
+        }
+    </script>
+
+</body>
+
+</html>
