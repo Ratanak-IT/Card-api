@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Computer Store</title>
+    <title>Tinh Evan</title>
     <link rel="stylesheet" href="./src/output.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body class="bg-[#E6EEF8] min-h-screen flex flex-col">
+    <!-- Header -->
     <header class="bg-white">
         <nav class="flex justify-between items-center w-[92%] mx-auto">
             <div>
-                <a href="#">
-                    <img class="w-16 h-15" src="#" alt="logo" />
-                </a>
+                <a href="#" class="text-2xl font-bold text-purple-500">Tinh Evan</a>
             </div>
             <nav
                 class="nav-links duration-450 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
@@ -27,16 +26,16 @@
                         <a class="hover:text-blue-500" href="/html/product.html">Product</a>
                     </li>
                     <li>
-                        <a class="hover:text-blue-500" href="#">Service</a>
+                        <a class="hover:text-blue-500" href="/html/service.html">Service</a>
                     </li>
                     <li>
-                        <a class="hover:text-blue-500" href="./html/about.html">About</a>
+                        <a class="hover:text-blue-500" href="/html/about.html">About</a>
                     </li>
                 </ul>
             </nav>
             <div class="flex items-center gap-6">
                 <!-- Sign in -->
-                <a href="./html/login.html">
+                <a href="/login.html">
                     <button class="bg-blue-300 text-white px-5 py-2 rounded-full hover:bg-sky-400">
                         Sign in
                     </button>
@@ -52,51 +51,135 @@
             </div>
         </nav>
     </header>
+
     <!-- Hero Section -->
     <main class="flex-1">
         <section
-            class="flex flex-col-reverse lg:flex-row items-center justify-center px-6 lg:px-12 py-12 space-y-8 lg:space-y-0 lg:space-x-8">
+            class="flex flex-col-reverse lg:flex-row items-center justify-center px-6 lg:px-12 py-16 space-y-8 lg:space-y-0 lg:space-x-8">
             <!-- Text Content -->
             <div class="text-center lg:text-left max-w-lg">
-                <h1 class="text-4xl md:text-5xl lg:text-[4.5rem] font-bold leading-tight">Computer Store</h1>
-                <p class="mt-4 text-black text-base md:text-lg">
-                    Welcome to Online Store! Discover quality products at unbeatable prices. Fast shipping. Secure
-                    checkout. Exceptional service.
+                <h1 class="text-4xl md:text-5xl lg:text-[4rem] font-extrabold leading-tight text-gray-800">
+                    Your Trusted Computer Store
+                </h1>
+                <p class="mt-4 text-gray-700 text-base md:text-lg">
+                    Discover the latest laptops, gadgets, and accessories. Great prices, fast shipping, and exceptional
+                    service.
                 </p>
-                <a href="/electronic.html">
+                <a href="./html/product.html">
                     <button
-                        class="mt-6 px-6 py-3 bg-blue-600 text-white text-base md:text-lg rounded-full hover:bg-blue-800">
+                        class="mt-6 px-6 py-3 bg-blue-600 text-white text-base md:text-lg rounded-full hover:bg-blue-800 shadow-md">
                         Shop now
                     </button>
                 </a>
             </div>
             <!-- Image -->
-            <img src="/image/logohome.png" alt="Laptop" class="max-w-xs md:max-w-sm lg:max-w-md w-full" />
+            <img src="./image/homepage.png" alt="Laptop"
+                class="max-w-xs md:max-w-sm lg:max-w-md w-full drop-shadow-xl" />
+        </section>
+
+        <!-- Featured Categories
+        <section class="py-16 px-6">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8">Featured Categories</h2>
+
+            </div>
+        </section> -->
+
+        <!-- Trending Products -->
+        <section class="py-16 bg-white px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold">Trending Products</h2>
+                    <a href="./html/product.html" class="text-blue-600 hover:underline">View All</a>
+                </div>
+                <div id="category-container" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Product Card -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Highlight -->
+        <section class="py-16 px-6 bg-[#E6EEF8]">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8">Why Shop With Us?</h2>
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl">
+                        🚚 <h3 class="font-semibold mt-2">Fast Delivery</h3>
+                        <p class="text-gray-600">Quick worldwide shipping for all orders.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl">
+                        🔒 <h3 class="font-semibold mt-2">Secure Payment</h3>
+                        <p class="text-gray-600">Your transactions are safe and encrypted.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl">
+                        🎧 <h3 class="font-semibold mt-2">24/7 Support</h3>
+                        <p class="text-gray-600">We’re always here to help you anytime.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl">
+                        🔄 <h3 class="font-semibold mt-2">Easy Returns</h3>
+                        <p class="text-gray-600">Hassle-free returns within 30 days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Shop?</h2>
+            <p class="mb-6">Find the latest tech products at unbeatable prices.</p>
+            <a href="./html/product.html">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 shadow-lg">
+                    Explore Products
+                </button>
+            </a>
         </section>
     </main>
 
-    
     <!-- Footer -->
-    <footer class="bg-white rounded-lg shadow-sm max-w-full dark:bg-gray-800">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
-                <a href="https://flowbite.com/" class="hover:underline">Electronics™</a>.
-                All Rights Reserved.
-            </span>
-            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a href="/product.html" class="hover:underline me-4 md:me-6">Product</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Service</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">About</a>
-                </li>
-            </ul>
+    <footer class="bg-gray-900 text-gray-300 pt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">Tinh-Evan</h2>
+                    <p class="text-gray-400 mb-4">
+                        Your one-stop shop for high-quality products, delivering style and convenience.
+                    </p>
+                </div>
+                <!-- Shop Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Shop</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./html/product.html" class="hover:text-white">All Products</a></li>
+                        <li><a href="./html/product.html" class="hover:text-white">Categories</a></li>
+                        <li><a href="#" class="hover:text-white">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-white">Sale</a></li>
+                    </ul>
+                </div>
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Our Story</a></li>
+                        <li><a href="#" class="hover:text-white">Team</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li>Email: <a href="mailto:ratanak1intel@gmail.com"
+                                class="hover:text-white">ratanak1intel@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+855964735981" class="hover:text-white">+855 964735981</a></li>
+                        <li>Phnom Penh, Cambodia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm">
+                &copy; 2025 Tinh-Evan. All rights reserved.
+            </div>
         </div>
     </footer>
 
@@ -107,7 +190,7 @@
             navLinks.classList.toggle("top-[8%]");
         }
     </script>
-
+    <script src="/script/productcategory.js"></script>
 </body>
 
 </html>
