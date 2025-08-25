@@ -12,7 +12,7 @@ async function getProducts() {
       .map(
         (product) => `
        <div class="bg-[#e5e7e9] p-2.5 rounded-2xl border border-gray-300 max-w-xs mx-auto flex flex-col h-full relative">
-  <a href="/html/card-detail.html?id=${product.id}" class="block">
+  <a href="../html/card-detail.html?id=${product.id}" class="block">
     <img class="w-full h-60 object-contain rounded-lg" src="${
       product.image
     }" alt="${product.title}" />
